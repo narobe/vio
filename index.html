@@ -1,0 +1,339 @@
+<!-- <?php
+
+function telegram($name, $phone, $message){
+  $key = "7256933927:AAFy19j4RNhJ_xsnOypGdafRqWMAY6LNX3Q";
+	$chat_id = "-4509757240";
+  echo $chat_id;
+  
+		$ch = curl_init("https://api.telegram.org/bot".$key."/sendMessage?chat_id=".$chat_id."&text=<b>From:</b>%20".$name."%0a<i>".$phone."</i>%0a<b>Message:%0a</b>".$message."&parse_mode=HTML");
+      
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+      curl_setopt($ch, CURLOPT_HEADER, 0);
+      $data = curl_exec($ch);
+      curl_close($ch);
+    }
+if(isset($_POST['submit'])){
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$message = $_POST['message'];
+telegram($name, $phone, $message);
+}
+
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Violet Gifts</title>
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="banner">
+          <div class="banner-bg">
+            <div class="profile">
+              <div class="title">
+                <h1>Violet Gifts</h1>
+                <p>gift and flowers</p>
+              </div>
+              <div class="logo">
+                <img src="./IMG/logo.svg" alt="Logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="front">
+          <div class="navigator">
+            <div data-index="1" class="nav-item active">Contact</div>
+            <div data-index="2" class="nav-item">Home</div>
+            <div data-index="3" class="nav-item">About</div>
+            <div data-index="4" class="nav-item">Packages</div>
+            <div class="indicator"></div>
+          </div>
+          <div>
+            <div class="screen">
+              <div class="wrapper">
+                <div data-index="1" class="screen-container contact active">
+                    <div class="contact-info">
+                      <div class="icon-box">
+                        <img src="./IMG/ICONS/location-dot.svg" alt="" />
+                      </div>
+                      <div class="info-box">
+                        <a href="">Bethel, --- Bld. groung floor</a>
+                      </div>
+                      <div class="icon-box">
+                        <img src="./IMG/ICONS/phone.svg" alt="" />
+                      </div>
+                      <div class="info-box">
+                        <p><a href="tel:0944291235">0944291235</a></p>
+                        <p><a href="tel:0944291235">0944291235</a></p>
+                      </div>
+                    </div>
+                    <div class="social-address">
+                      <div>
+                        <img src="./IMG/ICONS/instagram.svg" alt="" />
+                        <a href="https://instagram.com/violet_gifts">/violet_gifts</a>
+                      </div>
+                      <div>
+                        <img src="./IMG/ICONS/tiktok.svg" alt="" />
+                        <a href="https://tiktok.com/violet_gifts">/violet_gifts</a>
+                      </div>
+                      <div>
+                        <img src="./IMG/ICONS/telegram.svg" alt="" />
+                        <a href="https://telegram.com/violet_gifts">/violet_gifts</a>
+                      </div>
+                    </div>
+                    <div class="form">
+                      <form action="./" method="POST">
+                        <input autocomplete="name" type="text" name="name" placeholder="Name" />
+                        <input autocomplete="tel" type="tel" name="phone" placeholder="Phone" />
+                        <textarea   
+                          name="message"
+                          rows="3"
+                          placeholder="Message"
+                        ></textarea>
+                        <input type="submit" name="submit" value="Send Message" />
+                      </form>
+                    </div>
+                </div>
+                <div data-index="2" class="screen-container">
+
+                    <img class="hero-img" src="./IMG/hero.svg" alt="" />
+<div class="order-box">
+  <div >
+    <h3>Order Us</h3>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur</p>
+  </div>
+  <div class="line"></div>
+  <div><img src="./IMG/violet.jpg" alt=""></div>
+</div>
+                </div>
+                <div data-index="3" class="screen-container">
+                  <div class="bottom-blur-div"></div>
+                  <div class="about-box">
+                    <h3>About Us</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rem?
+                      <br>
+                      <br> • Lorem, ipsum
+                      <br> • Lorem, ipsum
+                      <br> • Lorem, ipsum
+                    </p>
+                    <h3>Gallery</h3>
+                  </div>
+                  <div class="magnific-img-container">
+                    <div class="magnific-img">
+                      <a class="image-popup-vertical-fit" href="./IMG/flowers.jpg" title="Flowers">
+                        <img src="./IMG/flowers.jpg" alt="flowers" />
+                      </a>
+                    </div>
+                    <div class="magnific-img">
+                      <a class="image-popup-vertical-fit" href="./IMG/flowers.jpg" title="Flowers">
+                        <img src="./IMG/flowers.jpg" alt="flowers" />
+                      </a>
+                    </div>
+                    <div class="magnific-img">
+                      <a class="image-popup-vertical-fit" href="./IMG/flowers.jpg" title="Flowers">
+                        <img src="./IMG/flowers.jpg" alt="flowers" />
+                      </a>
+                    </div>
+                    <div class="magnific-img">
+                      <a class="image-popup-vertical-fit" href="./IMG/flowers.jpg" title="Flowers">
+                        <img src="./IMG/flowers.jpg" alt="flowers" />
+                      </a>
+                    </div>
+                    <div class="magnific-img">
+                      <a class="image-popup-vertical-fit" href="./IMG/flowers.jpg" title="Flowers">
+                        <img src="./IMG/flowers.jpg" alt="flowers" />
+                      </a>
+                    </div>
+                    <div class="magnific-img">
+                      <a class="image-popup-vertical-fit" href="./IMG/flowers.jpg" title="Flowers">
+                        <img src="./IMG/flowers.jpg" alt="flowers" />
+                      </a>
+                    </div>
+                    <div class="magnific-img">
+                      <a class="image-popup-vertical-fit" href="./IMG/flowers.jpg" title="Flowers">
+                        <img src="./IMG/flowers.jpg" alt="flowers" />
+                      </a>
+                    </div>
+                    <div class="magnific-img">
+                      <a class="image-popup-vertical-fit" href="./IMG/flowers.jpg" title="Flowers">
+                        <img src="./IMG/flowers.jpg" alt="flowers" />
+                      </a>
+                    </div>
+                    <div class="magnific-img">
+                      <a class="image-popup-vertical-fit" href="./IMG/flowers.jpg" title="Flowers">
+                        <img src="./IMG/flowers.jpg" alt="flowers" />
+                      </a>
+                    </div>
+                    <div class="magnific-img">
+                      <a class="image-popup-vertical-fit" href="./IMG/flowers.jpg" title="Flowers">
+                        <img src="./IMG/flowers.jpg" alt="flowers" />
+                      </a>
+                    </div>
+                    <div class="magnific-img">
+                      <a class="image-popup-vertical-fit" href="./IMG/flowers.jpg" title="Flowers">
+                        <img src="./IMG/flowers.jpg" alt="flowers" />
+                      </a>
+                    </div>
+                    <div class="magnific-img">
+                      <a class="image-popup-vertical-fit" href="./IMG/flowers.jpg" title="Flowers">
+                        <img src="./IMG/flowers.jpg" alt="flowers" />
+                      </a>
+                    </div>
+                    <div class="magnific-img">
+                      <a class="image-popup-vertical-fit" href="./IMG/flowers.jpg" title="Flowers">
+                        <img src="./IMG/flowers.jpg" alt="flowers" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-index="4"
+                  class="screen-container packages bottom-blur"
+                >
+                  <div>
+                    <ul>
+                      <li class="package-list">
+                        <div class="li-img">
+                          <img src="IMG/flowers.jpg" alt="" />
+                        </div>
+                        <div class="info">
+                          <div>
+                            <h3>Flower for propose</h3>
+                            <p class="description">with free delivery</p>
+                          </div>
+                          <div class="button">
+                            <button>
+                              <a href="IMG/flowers.jpg" download="flowers.jpg">Save <img src="./IMG/ICONS/heart.svg" alt="" /></a>
+                            </button>
+                          </div>
+                          <div class="rating">
+                            <div class="stars">
+                              <img src="./IMG/ICONS/star.svg" alt="" />
+                              <img src="./IMG/ICONS/star.svg" alt="" />
+                              <img src="./IMG/ICONS/star.svg" alt="" />
+                              <img src="./IMG/ICONS/star.svg" alt="" />
+                              <img src="./IMG/ICONS/star.svg" alt="" />
+                            </div>
+                            <p>5.0 <span>(25 Orders)</span></p>
+                          </div>
+                          <div class="price">
+                            <p>4000 Br.</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="package-list">
+                        <div class="li-img">
+                          <img src="IMG/flowers.jpg" alt="" />
+                        </div>
+                        <div class="info">
+                          <div>
+                            <h3>Flower for propose</h3>
+                            <p class="description">with free delivery</p>
+                          </div>
+                          <div class="button">
+                            <button>
+                              <a href="IMG/flowers.jpg" download="flowers.jpg">Save <img src="./IMG/ICONS/heart.svg" alt="" /></a>
+                            </button>
+                          </div>
+                          <div class="rating">
+                            <div class="stars">
+                              <img src="./IMG/ICONS/star.svg" alt="" />
+                              <img src="./IMG/ICONS/star.svg" alt="" />
+                              <img src="./IMG/ICONS/star.svg" alt="" />
+                              <img src="./IMG/ICONS/star.svg" alt="" />
+                              <img src="./IMG/ICONS/star.svg" alt="" />
+                            </div>
+                            <p>5.0 <span>(25 Orders)</span></p>
+                          </div>
+                          <div class="price">
+                            <p>4000 Br.</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="package-list">
+                        <div class="li-img">
+                          <img src="IMG/flowers.jpg" alt="" />
+                        </div>
+                        <div class="info">
+                          <div>
+                            <h3>Flower for propose</h3>
+                            <p class="description">with free delivery</p>
+                          </div>
+                          <div class="button">
+                            <button>
+                              <a href="IMG/flowers.jpg" download="flowers.jpg">Save <img src="./IMG/ICONS/heart.svg" alt="" /></a>
+                            </button>
+                          </div>
+                          <div class="rating">
+                            <div class="stars">
+                              <img src="./IMG/ICONS/star.svg" alt="" />
+                              <img src="./IMG/ICONS/star.svg" alt="" />
+                              <img src="./IMG/ICONS/star.svg" alt="" />
+                              <img src="./IMG/ICONS/star.svg" alt="" />
+                              <img src="./IMG/ICONS/star.svg" alt="" />
+                            </div>
+                            <p>5.0 <span>(25 Orders)</span></p>
+                          </div>
+                          <div class="price">
+                            <p>4000 Br.</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <div class="bottom-blur-div"></div>
+                    </div>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+            <div class="tool-bar">
+              <div class="tool-bar-item share-container">
+                <img
+                  class="tool-bar-icon"
+                  src="./IMG/ICONS/share.svg"
+                  alt="Share Icon"
+                />
+                <span class="tool-bar-text">Share</span>
+              </div>
+              <a class="tool-bar-item" href="https://t.me/violet">
+                  <img
+                    class="tool-bar-icon"
+                    src="./IMG/ICONS/cart-shopping.svg"
+                    alt="Share Icon"
+                  />
+                  <span class="tool-bar-text">Order Yours</span>
+              </a>
+              <div class="tool-bar-item save-contact">
+                <img
+                  class="tool-bar-icon"
+                  src="./IMG/ICONS/download.svg"
+                  alt="Share Icon"
+                />
+                <span class="tool-bar-text">Save Contact</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="responsive">
+        <img src="./IMG/ICONS/mobile-button.svg" alt="Mobile Icon" />
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+    <script src='jquery.min.js'></script>
+    <script src='jquery.magnific-popup.min.js'></script>
+    <script  src="./script2.js"></script>
+    
+
+  </body>
+</html>
