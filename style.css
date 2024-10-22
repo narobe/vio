@@ -522,7 +522,7 @@ form input:last-child {
   width: 100%;
   height: 100%;
 }
-
+/*
 @media (max-height: 639px) or (max-width: 320px) {
   .container {
     display: none;
@@ -546,3 +546,4 @@ form input:last-child {
     display: flex;
   }
 }
+*/
